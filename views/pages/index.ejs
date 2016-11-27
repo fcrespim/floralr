@@ -19,6 +19,49 @@
     font-style: bold;
 
 }
+
+/* video */
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+/* nice bootstrap ready facebook share button http://justincron.com */
+
+.btn-facebook {
+  color: #fff;
+  background-color: #4C67A1;
+}
+.btn-facebook:hover {
+  color: #fff;
+  background-color: #405D9B;
+}
+.btn-facebook:focus {
+  color: #fff;
+}
   </style>
 </head>
 <body style = "background: #75ADFB">
@@ -33,6 +76,9 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+
     </ol>
 
     <!-- Wrapper for slides -->
@@ -51,6 +97,16 @@
 
       <div class="item">
         <img src="14.jpg" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="12.jpg" width="460" height="345">
+      </div>
+      <div class="item">
+        <img src="13.jpg" width="460" height="345">
+      </div>
+      <div class="item">
+        <img src="11.jpeg" width="460" height="345">
       </div>
     </div>
 
@@ -86,24 +142,36 @@
 <p class="text-center">Aproveita e segue o teu caminho...</p>
   
 </div>
-<div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">  
-<div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="//www.youtube.com/watch?v=BOoRlUKVYGw"></iframe>
-</div>
-</div>
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+    <div class="embed-responsive embed-responsive-16by9" >
+      <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/BOoRlUKVYGw"></iframe>
+    </div>
+  </div>
+  <div class="col-sm-3"></div>
+  </div>
+
+
 <br>
-
-
 <div>
-
   <p class="text-center">Tens de Vir Para a Nossa Equipa?</p>
-<p class="text-center">•A LR é uma Empresa de Venda Directa Com 32 Anos de Actividade.</p>
-<p class="text-center">•Para Fazer Parte desta Industria Basta Preencher Agora</p>
-<p class="text-center">•Irá Receber um Kit Com Produtos Para Veres a Qualidade Desta Empresa</p>
-<p class="text-center">•O Sucesso Nesta Industria Depende do Empenho e Dedicação de Cada Um.</p>
-<p class="text-center">•Em Lado Nenhum Garantimos Sucesso Mas Estamos Empenhados em Ajudar Todas as Pessoas.</p>
-<p class="text-center">•A Nossa Equipa e as Nossas Ferramentas de Internet Vão Ajudar a Crescer.</p>
+  <p class="text-center">•A LR é uma Empresa de Venda Directa Com 32 Anos de Actividade.</p>
+  <p class="text-center">•Para Fazer Parte desta Industria Basta Preencher Agora</p>
+  <p class="text-center">•Irá Receber um Kit Com Produtos Para Veres a Qualidade Desta Empresa</p>
+  <p class="text-center">•O Sucesso Nesta Industria Depende do Empenho e Dedicação de Cada Um.</p>
+  <p class="text-center">•Em Lado Nenhum Garantimos Sucesso Mas Estamos Empenhados em Ajudar Todas as Pessoas.</p>
+  <p class="text-center">•A Nossa Equipa e as Nossas Ferramentas de Internet Vão Ajudar a Crescer.</p>
 </div>
+<div class="row">
+  <div class="col-sm-5"></div>
+  <div class="col-sm-2">
+<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://www.example.com&p[images][0]=&p[title]=Title%20Goes%20Here&p[summary]=Description%20goes%20here!" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false"><button style="width:100%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a>
+    
+  </div>
+  <div class="col-sm-5"></div>
+</div>
+
 <div class="container">
   <form action="/submit" method="post">
     <div class="form-group">
@@ -134,5 +202,8 @@
 </div>
 
 </body>
+<footer>
+  <p class="text-center">Para mais informações contactar 933 678 671</p>
+</footer>
 </html>
 
